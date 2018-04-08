@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="D:\maven\maven_repo\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar"/>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/xinhua" driverClass="com.mysql.jdbc.Driver" password="xinhua" userId="xinhua" />
+    <javaModelGenerator targetPackage="com.xinhua.oa.model.pojo" targetProject="oa" />
+    <sqlMapGenerator targetPackage="com.xinhua.oa.mapper.auto" targetProject="oa" />
+    <javaClientGenerator targetPackage="com.xinhua.oa.mapper.auto" targetProject="oa" type="XMLMAPPER" />
+    <table tableName="prod_user"></table>
+  </context>
+</generatorConfiguration>

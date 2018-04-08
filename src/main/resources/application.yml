@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  context-path: /oa
+spring:
+  application:
+    name: xinhua-oa
+  datasource:
+    username: xinhua
+    password: xinhua
+    type: org.apache.commons.dbcp2.BasicDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xinhua
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  activiti:
+    check-process-definitions: false
+mybatis:
+  mapper-locations:
+  - com/xinhua/oa/mapper/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka

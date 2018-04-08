@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<style>
+	body{
+		
+		background-color: #393939
+	}
+	div{
+		
+		width: inherit;
+		max-width:260px;
+		height: inherit;
+		padding: 10px;
+		background-color: #fff;
+		margin: 150px auto;
+		background-color: #394557;
+	}
+	table{
+		
+		width:250px;
+		border: 1px solid #aaa;
+		background-color:#aaa;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px
+	}
+	button{
+		display:block;
+		margin:20px auto 10px;
+	}
+	body{
+		
+		background-color: #394557;
+	}
+</style>
+<body>
+<div>
+
+	<table>
+		<tr>
+			<td>用户名</td>
+			<td><input name='username'/></td>
+		</tr>
+		<tr>
+			<td>密&nbsp;&nbsp;码</td>
+			<td><input name='username'/></td>
+		</tr>
+		<tr>
+			<td><button>登录</button></td>
+			<td><button onclick="javascript:window.location.href='signUp'">注册</button></td>
+		</tr>
+	</table>
+</div>
+</body>
+<script type="text/javascript">
+function signUp(){
+	
+	window.location.href='/signUp';
+}
+</script>
+</html>
