@@ -1,0 +1,3 @@
+使用默认dbcp2配置，加入了activiti工作流引擎开源模块，未使用任何的安全框架，密码使用MD5加密
+
+作为eureka的客户端注册到注册中心，依赖stool项目和scSignCenter项目
